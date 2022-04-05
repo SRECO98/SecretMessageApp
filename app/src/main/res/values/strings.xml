@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SecretMessage</string>
+    <string name="secret_message">Secret Message</string>
+    <string name="click_here">CLICK HERE</string>
+    <string name="write_your_secret_message_below_to_translate">Write your message or password below to make it secret.</string>
+    <string name="prr">…</string>
+    <string name="if_you_want_to_translate_something_from_our_secret_code_then_write_it_down">If you want to translate something from our secret code then write it down.</string>
+    <string name="prr2">…</string>
+    <string name="translate">Translate</string>
+    <string name="readme">ReadMe</string>
+    <string name="contact_dev">Contact dev</string>
+    <string name="exit_app">Exit App</string>
+    <string name="email">Email:</string>
+    <string name="banovicbl22_gmail_com">banovicbl22@gmail.com</string>
+    <string name="click_here_facebook">Click here</string>
+    <string name="linkedin">LinkedIn:</string>
+    <string name="copy_text_in_the_box">Copy text in the box</string>
+    <string name="delete_text_in_the_box">Delete text in the box.</string>
+    <string name="facebook">Facebook:</string>
+    <string name="copy_my_email">copy_my_email</string>
+    <string name="start">START</string>
+    <string name="text_read_me">This application was created exclusively for the purposes of entertainment or to protect the users private passwords, I ask you to not try to use the app for illegal purposes.</string>
+    <string name="instructions">Instructions</string>
+</resources>

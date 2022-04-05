@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranslaterActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textViewCaption1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/textview_background"
+        android:gravity="top|start"
+        android:text="@string/write_your_secret_message_below_to_translate"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:importantForAutofill="no"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:maxLines="10"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_translate"
+        android:gravity="top"
+        android:hint="@string/prr"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaption1"
+        />
+
+    <TextView
+        android:id="@+id/textViewCaption2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/textview_background"
+        android:gravity="top|start"
+        android:text="@string/if_you_want_to_translate_something_from_our_secret_code_then_write_it_down"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:importantForAutofill="no"
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_translate"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/prr2"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLines="10"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaption2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonDeleteTextOne"
+        android:layout_width="56dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/delete_text_in_the_box"
+        android:src="@drawable/icon_delete"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingButtonCopyTextOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonDeleteTextTwo"
+        android:layout_width="56dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/delete_text_in_the_box"
+        android:src="@drawable/icon_delete"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingButtonCopyTextTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonCopyTextOne"
+        android:layout_width="56dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="208dp"
+        android:contentDescription="@string/copy_text_in_the_box"
+        android:src="@drawable/ic_baseline_content_copy_24"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonCopyTextTwo"
+        android:layout_width="56dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="510dp"
+        android:contentDescription="@string/copy_text_in_the_box"
+        android:src="@drawable/ic_baseline_content_copy_24"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/translater"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/translate"
+        android:textColor="#05F6D2"
+        android:fontFamily="@font/eater"
+        android:textScaleX="1.2"
+        android:textSize="18sp"
+        android:background="@drawable/button_translate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/captionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/atomic_age"
+        android:gravity="center"
+        android:text="@string/secret_message"
+        android:textColor="#CDAD00"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStart"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.95"
+        android:background="@drawable/button_start"
+        android:fontFamily="@font/eater"
+        android:text="@string/start"
+        android:textColor="#F2000000"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captionTextView" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/buttons_mainpage"
+        android:fontFamily="@font/eater"
+        android:gravity="center"
+        android:text="@string/instructions"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonReadMe"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/buttons_mainpage"
+        android:fontFamily="@font/eater"
+        android:gravity="center"
+        android:text="@string/readme"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInstructions" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:fontFamily="@font/eater"
+        android:id="@+id/buttonContact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/buttons_mainpage"
+        android:gravity="center"
+        android:text="@string/contact_dev"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReadMe" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:fontFamily="@font/eater"
+        android:id="@+id/buttonExit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/buttons_mainpage"
+        android:gravity="center"
+        android:text="@string/exit_app"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContact" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
